@@ -1,0 +1,8 @@
+OBSERVACION DE TEST:
+Se modifican INDIVIDUOS en eph_Indiv_2016_CABA.csv con CODUSU 665 y 821, cambiando su CAT_OCUP de 9 a 4. Pues los mismos se utilizan en el test donde la encuesta se supone valida, pero no lo es bajo esta observacion, pues la CAT_OCUP debe estar entre -1 y 4 para ser correcta. 
+Asi mismo se realizaron algunas modificaciones adicionales para lograr la correctitud de los resultados esperados por los test, las mismas han sido comentadas en el codigo, y tambien se han discutido en el grupo de telegram, debido a que algunos test estaban mal definidos.
+
+COBERTURA:
+En este mismo directorio se encuntra COBERTURA.PDF, que tambien se puede encontrar en formato .html en el directorio /cobertura. Se logro una cobertura del 100% de las funciones implementadas para el desarrollo de los ejercicios, y de todas las lineas salvo 1. Dicha linea (una instruccion cout), perteneciente a la resolucion del ultimo ejercicio, no se puede acceder pues es el resultado de que falle la precondicion del ejercicio, y en tal caso, no hay consenso sobre que se supone retorne la funcion y por lo tanto no sabriamos que poner en el EXPECT_EQ en el caso de no ser validas las fechas de las encuestas, por esto mismo no se testea este caso y la linea queda sin accederse.
+
+
